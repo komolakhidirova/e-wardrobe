@@ -43,13 +43,13 @@ const seasonLabels = {
 // Перевод категорий на русский
 const categoryLabels = {
 	blouses: 'Блузы',
-	tops: 'Футболки и топы',
-	cardigans: 'Пиджаки и кардиганы',
+	tops: 'Футболки',
+	cardigans: 'Пиджаки',
 	dresses: 'Платья',
 	bottoms: 'Брюки',
-	pants: 'Спортивные штаны',
+	pants: 'Спортивки',
 	skirts: 'Юбки',
-	outwear: 'Верхняя одежда',
+	outwear: 'Верхняя',
 	accessories: 'Колготки',
 	shoes: 'Обувь',
 }

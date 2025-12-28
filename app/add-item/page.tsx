@@ -12,6 +12,7 @@ import {
 import { Textarea } from '@/components/ui/textarea'
 import { wardrobeDB } from '@/lib/indexedDB'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import { ChangeEvent, FormEvent, useRef, useState } from 'react'
 
 type WardrobeItem = {
@@ -42,6 +43,8 @@ const AddItem = () => {
 		description: '',
 		imageBase64: '',
 	})
+
+	const router = useRouter()
 
 	const [imagePreview, setImagePreview] = useState<string | null>(null)
 
@@ -225,6 +228,8 @@ const AddItem = () => {
 			}
 
 			console.log('Предмет сохранен в IndexedDB:', newItem)
+
+			router.push('/')
 		} catch (error) {
 			console.error('Ошибка при сохранении:', error)
 			alert('Произошла ошибка при сохранении. Пожалуйста, попробуйте снова.')
