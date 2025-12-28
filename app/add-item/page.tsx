@@ -252,6 +252,7 @@ const AddItem = () => {
 			if (fileInputRef.current) {
 				fileInputRef.current.value = ''
 			}
+			router.push('/')
 		}
 	}
 
